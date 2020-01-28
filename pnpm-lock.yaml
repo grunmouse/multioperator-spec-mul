@@ -1,0 +1,5 @@
+dependencies:
+  '@grunmouse/multioperator': 'link:../multioperator'
+lockfileVersion: 5.1
+specifiers:
+  '@grunmouse/multioperator': 'link:..\multioperator'
