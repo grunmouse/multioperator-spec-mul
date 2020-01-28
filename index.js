@@ -1,12 +1,12 @@
 const Mop = require('@grunmouse/multioperator');
 
 const dot = new Mop('dot');
-const crux = new Mop('crux');
+const cross = new Mop('cross');
 
 
 const opers = [
 	dot,
-	crux
+	cross
 ];
 
 const operators = {};
