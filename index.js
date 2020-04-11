@@ -1,13 +1,31 @@
 const Mop = require('@grunmouse/multioperator');
 
-const dot = new Mop('dot');
-const cross = new Mop('cross');
-
+/**
+ * Обозначения для специальных видов произведений
+ */
 
 const opers = [
-	dot,
-	cross
-];
+	/**
+	 * точка - например скалярное произведение векторов
+	 */
+	'dot',
+	/**
+	 * крест - например вектороное произведение векторов
+	 */
+	'cross',
+	/**
+	 * крест в круге - произведение Кронекера
+	 */
+	'ocross',
+	/**
+	 * точка в круге - произведение Адамара
+	 */
+	'odot',
+	/**
+	 * ромбик - произведение Хатри-Рао
+	 */
+	'diamond'
+].map(name=>(new Mop(name)));
 
 const operators = {};
 const symbols = {};
